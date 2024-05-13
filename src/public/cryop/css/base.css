@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Inter";
+    src: url('../../font/Inter-Regular.ttf') format('truetype');
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html { 
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+body {
+    overscroll-behavior-y: none;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+html, body {
+    max-width: 100%;
+    box-sizing: border-box;
+}

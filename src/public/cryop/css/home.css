@@ -1,0 +1,35 @@
+@keyframes bouncing {
+    0%, 100%{
+        transform: translateY(-25%);
+        animation-timing-function: ease-in-out;
+    }
+    50%{
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0.25, 1);
+    }
+}
+
+.bouncing {
+    animation: bouncing 3s infinite;
+}
+
+@keyframes phone-message-bouncing {
+    0%, 100%{
+        transform: translateY(-105%);
+        animation-timing-function: cubic-bezier(0, 1.23, 0.2, 1);
+    }
+    50%{
+        transform: none;
+        animation-timing-function: cubic-bezier(0.29,-0.34, 0.38, 0.45);
+    }
+}
+
+.phone-message-bouncing {
+    animation: phone-message-bouncing 2s infinite;
+}
+.phone-message{
+    -webkit-mask-image: url('../img/phone_only_background_black.png');
+    mask-image: url('../img/phone_only_background_black.png');
+    mask-size: 100%;
+    mask-position: 0 0, 0 0, 0 0, 0 0;
+}
